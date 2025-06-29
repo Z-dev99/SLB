@@ -163,108 +163,115 @@
     </div>
   </div>
 
-<header>
-  <div class="container py-2">
-    <div class="row py-4 pb-0 pb-sm-4 align-items-center">
-      <!-- Logo -->
-      <div class="col-sm-4 col-lg-3 text-center text-sm-start">
-        <div class="main-logo">
-          <a href="index.html">
-           LOGO
-          </a>
-        </div>
-      </div>
 
-      <!-- Search Bar -->
-      <div class="col-sm-6 offset-sm-2 offset-md-0 col-lg-5 d-none d-lg-block">
-        <div class="search-bar border rounded-2 px-3 border-dark-subtle">
-          <form id="search-form" class="text-center d-flex align-items-center" action="/search" method="GET">
-            <input type="text" name="query" class="form-control border-0 bg-transparent"
-              placeholder="Search dried fruits, nut mixes, organic snacks..." />
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-              <path fill="currentColor"
-                d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z" />
-            </svg>
-          </form>
+  <header>
+    <div class="container py-2">
+      <div class="row py-4 pb-0 pb-sm-4 align-items-center">
+        <!-- Logo -->
+        <div class="col-sm-4 col-lg-3 text-center text-sm-start">
+          <div class="main-logo">
+            <a href="index.html" class="text-decoration-none fw-bold fs-4" style="color: #379042;">
+              <img src="images/new-logo.png" alt="" height="80">
+            </a>
+          </div>
         </div>
-      </div>
 
-      <!-- Contact Info and Icons -->
-      <div class="col-sm-8 col-lg-4 d-flex justify-content-end gap-5 align-items-center mt-4 mt-sm-0 justify-content-center justify-content-sm-end">
-       
-        <div class="support-box text-end d-none d-xl-block">
-          <span class="fs-6 secondary-font text-muted">Email</span>
-          <h5 class="mb-0">s.saparbaev@theslb.lt</h5>
+        <!-- Search Bar -->
+        <div class="col-sm-6 offset-sm-2 offset-md-0 col-lg-5 d-none d-lg-block">
+          <div class="search-bar border rounded-2 px-3" style="border-color: #cfe6d1;">
+            <form id="search-form" class="text-center d-flex align-items-center" action="/search" method="GET">
+              <input type="text" name="query" class="form-control border-0 bg-transparent text-dark"
+                placeholder="Search dried fruits, nut mixes, organic snacks..." />
+              <button type="submit" class="btn p-0 border-0 bg-transparent text-success" style="color: #379042;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path fill="currentColor"
+                    d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z" />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div
+          class="col-sm-8 col-lg-4 d-flex justify-content-end gap-5 align-items-center mt-4 mt-sm-0 justify-content-center justify-content-sm-end">
+          <div class="support-box text-end d-none d-xl-block">
+            <span class="fs-6 secondary-font" style="color: #7fae89;">Email</span>
+            <h5 class="mb-0">
+              <a href="mailto:s.saparbaev@theslb.lt" class="text-decoration-none fw-medium" style="color: #379042;">
+                marius_alzbergas@theslb.lt
+              </a>
+            </h5>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Separator -->
-  <div class="container-fluid">
-    <hr class="m-0">
-  </div>
+    <div class="container-fluid">
+      <hr class="m-0">
+    </div>
+    <div class="container">
+      <nav class="main-menu d-flex navbar navbar-expand-lg">
 
-  <!-- Navigation -->
-  <div class="container">
-    <nav class="main-menu d-flex navbar navbar-expand-lg">
-
-      <!-- Icons (mobile only) -->
-      <div class="d-flex d-lg-none align-items-end mt-3">
-        <ul class="d-flex justify-content-end list-unstyled m-0">
-          <li><a href="account.html" class="mx-3"><iconify-icon icon="healthicons:person" class="fs-4"></iconify-icon></a></li>
-          <li><a href="wishlist.html" class="mx-3"><iconify-icon icon="mdi:heart" class="fs-4"></iconify-icon></a></li>
-          <li>
-            <a href="#" class="mx-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
-              <iconify-icon icon="mdi:cart" class="fs-4 position-relative"></iconify-icon>
-              <span class="position-absolute translate-middle badge rounded-circle bg-primary pt-2">03</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="mx-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSearch" aria-controls="offcanvasSearch">
-              <iconify-icon icon="tabler:search" class="fs-4"></iconify-icon>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Navbar toggle -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-        aria-controls="offcanvasNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Offcanvas Navbar -->
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header justify-content-center">
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-
-        <div class="offcanvas-body justify-content-between">
-          <!-- Categories -->
-          <select class="filter-categories border-0 mb-0 me-5">
-            <option>Shop by Category</option>
-            <option>Dried Fruits</option>
-            <option>Nuts & Seeds</option>
-            <option>Fruit Mixes</option>
-            <option>Organic Snacks</option>
-          </select>
-
-          <!-- Menu -->
-          <ul class="navbar-nav menu-list list-unstyled d-flex gap-md-3 mb-0">
-            <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
-            <li class="nav-item"><a href="shop.html" class="nav-link">Shop</a></li>
-            <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
-            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        <div class="d-flex d-lg-none align-items-end mt-3">
+          <ul class="d-flex justify-content-end list-unstyled m-0">
+            <li>
+              <a href="account.html" class="mx-3 text-success-emphasis" style="color: #379042;">
+                <iconify-icon icon="healthicons:person" class="fs-4"></iconify-icon>
+              </a>
+            </li>
+            <li>
+              <a href="wishlist.html" class="mx-3" style="color: #379042;">
+                <iconify-icon icon="mdi:heart" class="fs-4"></iconify-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="mx-3 position-relative" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart"
+                aria-controls="offcanvasCart" style="color: #379042;">
+                <iconify-icon icon="mdi:cart" class="fs-4"></iconify-icon>
+                <span class="position-absolute translate-middle badge rounded-circle bg-success pt-2"
+                  style="background-color: #379042;">
+                  03
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="mx-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSearch"
+                aria-controls="offcanvasSearch" style="color: #379042;">
+                <iconify-icon icon="tabler:search" class="fs-4"></iconify-icon>
+              </a>
+            </li>
           </ul>
-
-          <!-- Desktop Icons -->
-     
         </div>
-      </div>
-    </nav>
-  </div>
-</header>
+
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header justify-content-center">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+
+          <div class="offcanvas-body justify-content-between">
+            <ul class="navbar-nav menu-list list-unstyled d-flex gap-md-3 mb-0">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link fw-semibold text-success" style="color: #379042;">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="shop.html" class="nav-link fw-semibold" style="color: #379042;">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a href="about.html" class="nav-link fw-semibold" style="color: #379042;">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link fw-semibold" style="color: #379042;">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
 
   <section id="banner" class="py-3" style="background: #F9F3EC;">
     <div class="container">
@@ -338,7 +345,8 @@
                   <iconify-icon icon="clarity:star-solid" class="text-primary"></iconify-icon>
                   <iconify-icon icon="clarity:star-solid" class="text-primary"></iconify-icon>
                   <iconify-icon icon="clarity:star-solid" class="text-primary"></iconify-icon>
-                  5.0</span>
+                  5.0
+                </span>
               </div>
             </div>
             <div class="product-price pt-3 pb-3">
@@ -611,7 +619,8 @@
                           <iconify-icon icon="clarity:star-solid" class="text-primary me-2"></iconify-icon>
                           <iconify-icon icon="clarity:star-solid" class="text-primary me-2"></iconify-icon>
                           <iconify-icon icon="clarity:star-solid" class="text-primary me-2"></iconify-icon>
-                          (5.0)</span>
+                          (5.0)
+                        </span>
                       </div>
                     </div>
                   </div>

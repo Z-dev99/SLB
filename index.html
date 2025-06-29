@@ -42,7 +42,7 @@
       <symbol xmlns="http://www.w3.org/2000/svg" id="category" viewBox="0 0 24 24">
         <path fill="currentColor"
           d="M19 5.5h-6.28l-.32-1a3 3 0 0 0-2.84-2H5a3 3 0 0 0-3 3v13a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-10a3 3 0 0 0-3-3Zm1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-13a1 1 0 0 1 1-1h4.56a1 1 0 0 1 .95.68l.54 1.64a1 1 0 0 0 .95.68h7a1 1 0 0 1 1 1Z" />
-      </symbol> 
+      </symbol>
       <symbol xmlns="http://www.w3.org/2000/svg" id="calendar" viewBox="0 0 24 24">
         <path fill="currentColor"
           d="M19 4h-2V3a1 1 0 0 0-2 0v1H9V3a1 1 0 0 0-2 0v1H5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm1 15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-7h16Zm0-9H4V7a1 1 0 0 1 1-1h2v1a1 1 0 0 0 2 0V6h6v1a1 1 0 0 0 2 0V6h2a1 1 0 0 1 1 1Z" />
@@ -101,637 +101,658 @@
 
 
 
-<header>
- <div class="container py-2">
-  <div class="row py-4 pb-0 pb-sm-4 align-items-center">
-    <!-- Logo -->
-    <div class="col-sm-4 col-lg-3 text-center text-sm-start">
-      <div class="main-logo">
-        <a href="index.html" class="text-decoration-none fw-bold fs-4" style="color: #379042;">
-          <img src="images/new-logo.png" alt="" height="80"> 
-        </a>
-      </div>
-    </div>
-
-    <!-- Search Bar -->
-    <div class="col-sm-6 offset-sm-2 offset-md-0 col-lg-5 d-none d-lg-block">
-      <div class="search-bar border rounded-2 px-3" style="border-color: #cfe6d1;">
-        <form id="search-form" class="text-center d-flex align-items-center" action="/search" method="GET">
-          <input
-            type="text"
-            name="query"
-            class="form-control border-0 bg-transparent text-dark"
-            placeholder="Search dried fruits, nut mixes, organic snacks..." />
-          <button type="submit" class="btn p-0 border-0 bg-transparent text-success" style="color: #379042;">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-              <path fill="currentColor"
-                d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z" />
-            </svg>
-          </button>
-        </form>
-      </div>
-    </div>
-
-    <!-- Contact Info and Icons -->
-    <div class="col-sm-8 col-lg-4 d-flex justify-content-end gap-5 align-items-center mt-4 mt-sm-0 justify-content-center justify-content-sm-end">
-      <div class="support-box text-end d-none d-xl-block">
-        <span class="fs-6 secondary-font" style="color: #7fae89;">Email</span>
-        <h5 class="mb-0">
-          <a href="mailto:s.saparbaev@theslb.lt" class="text-decoration-none fw-medium" style="color: #379042;">
-            s.saparbaev@theslb.lt
-          </a>
-        </h5>
-      </div>
-    </div>
-  </div>
-</div>
-
-  <div class="container-fluid">
-    <hr class="m-0">
-  </div>
-<div class="container">
-  <nav class="main-menu d-flex navbar navbar-expand-lg">
-
-    <!-- Icons (mobile only) -->
-    <div class="d-flex d-lg-none align-items-end mt-3">
-      <ul class="d-flex justify-content-end list-unstyled m-0">
-        <li>
-          <a href="account.html" class="mx-3 text-success-emphasis" style="color: #379042;">
-            <iconify-icon icon="healthicons:person" class="fs-4"></iconify-icon>
-          </a>
-        </li>
-        <li>
-          <a href="wishlist.html" class="mx-3" style="color: #379042;">
-            <iconify-icon icon="mdi:heart" class="fs-4"></iconify-icon>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="mx-3 position-relative" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart" style="color: #379042;">
-            <iconify-icon icon="mdi:cart" class="fs-4"></iconify-icon>
-            <span class="position-absolute translate-middle badge rounded-circle bg-success pt-2" style="background-color: #379042;">
-              03
-            </span>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="mx-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSearch" aria-controls="offcanvasSearch" style="color: #379042;">
-            <iconify-icon icon="tabler:search" class="fs-4"></iconify-icon>
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <!-- Toggler -->
-    <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- Offcanvas Menu -->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-header justify-content-center">
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-
-      <div class="offcanvas-body justify-content-between">
-        <ul class="navbar-nav menu-list list-unstyled d-flex gap-md-3 mb-0">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link fw-semibold text-success" style="color: #379042;">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="shop.html" class="nav-link fw-semibold" style="color: #379042;">Shop</a>
-          </li>
-          <li class="nav-item">
-            <a href="about.html" class="nav-link fw-semibold" style="color: #379042;">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a href="contact.html" class="nav-link fw-semibold" style="color: #379042;">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</div>
-</header>
-
-<section id="banner" style="background-color: #e5f3e6;"> 
-  <div class="container">
-    <div class="swiper main-swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide py-5">
-          <div class="row banner-content align-items-center">
-            <div class="img-wrapper col-md-5">
-              <!-- Можно добавить изображение -->
-            </div>
-            <div class="content-wrapper col-md-7 p-5 mb-5">
-              <div class="secondary-font text-uppercase mb-4" style="color: #379042;">Natural & Healthy</div>
-              <h2 class="banner-title display-1 fw-normal">
-                Delicious <span style="color: #379042;">Mixed Dried Fruits</span>
-              </h2>
-              <p class="mb-4 fs-5 text-dark-emphasis">A perfect blend of dried apricots, figs, and raisins for your healthy snacking.</p>
-              <a href="shop.html" class="btn btn-primary btn-lg text-uppercase fs-6 rounded-1" style="--bs-btn-bg: #379042;">
-                Shop Now
-                <svg width="24" height="24" viewBox="0 0 24 24" class="mb-1">
-                  <use xlink:href="#arrow-right"></use>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 2 -->
-        <div class="swiper-slide py-5">
-          <div class="row banner-content align-items-center">
-            <div class="img-wrapper col-md-5"></div>
-            <div class="content-wrapper col-md-7 p-5 mb-5">
-              <div class="secondary-font text-uppercase mb-4" style="color: #379042;">Sweet & Tasty</div>
-              <h2 class="banner-title display-1 fw-normal">
-                Premium <span style="color: #379042;">Dried Apricots</span>
-              </h2>
-              <p class="mb-4 fs-5 text-dark-emphasis">Naturally dried, full of flavor and packed with nutrients.</p>
-              <a href="shop.html" class="btn btn-primary btn-lg text-uppercase fs-6 rounded-1" style="--bs-btn-bg: #379042;">
-                Buy Now
-                <svg width="24" height="24" viewBox="0 0 24 24" class="mb-1">
-                  <use xlink:href="#arrow-right"></use>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 3 -->
-        <div class="swiper-slide py-5">
-          <div class="row banner-content align-items-center">
-            <div class="img-wrapper col-md-5"></div>
-            <div class="content-wrapper col-md-7 p-5 mb-5">
-              <div class="secondary-font text-uppercase mb-4" style="color: #379042;">Nutritious Mix</div>
-              <h2 class="banner-title display-1 fw-normal">
-                Organic <span style="color: #379042;">Dried Figs & Nuts</span>
-              </h2>
-              <p class="mb-4 fs-5 text-dark-emphasis">Handpicked figs combined with premium nuts for the ultimate snack.</p>
-              <a href="shop.html" class="btn btn-primary btn-lg text-uppercase fs-6 rounded-1" style="--bs-btn-bg: #379042;">
-                Order Today
-                <svg width="24" height="24" viewBox="0 0 24 24" class="mb-1">
-                  <use xlink:href="#arrow-right"></use>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="swiper-pagination mb-5"></div>
-    </div>
-  </div>
-</section>
-
-<section id="categories">
-  <div class="container my-3 py-5">
-    <div class="row my-5">
-      
-      <div class="col text-center">
-        <a href="#" class="categories-item text-decoration-none text-dark">
-          <iconify-icon class="category-icon mb-3" icon="mdi:fruit-cherries" style="color: #379042; font-size: 3rem;"></iconify-icon>
-          <h5 class="fw-semibold" style="color: #379042;">Dried Berries</h5>
-        </a>
-      </div>
-
-      <div class="col text-center">
-        <a href="#" class="categories-item text-decoration-none text-dark">
-          <iconify-icon class="category-icon mb-3" icon="mdi:fruit-citrus" style="color: #379042; font-size: 3rem;"></iconify-icon>
-          <h5 class="fw-semibold" style="color: #379042;">Dried Citrus</h5>
-        </a>
-      </div>
-
-      <div class="col text-center">
-        <a href="#" class="categories-item text-decoration-none text-dark">
-          <iconify-icon class="category-icon mb-3" icon="mdi:fruit-grapes" style="color: #379042; font-size: 3rem;"></iconify-icon>
-          <h5 class="fw-semibold" style="color: #379042;">Raisins & Grapes</h5>
-        </a>
-      </div>
-
-      <div class="col text-center">
-        <a href="#" class="categories-item text-decoration-none text-dark">
-          <iconify-icon class="category-icon mb-3" icon="mdi:nut" style="color: #379042; font-size: 3rem;"></iconify-icon>
-          <h5 class="fw-semibold" style="color: #379042;">Nuts & Seeds</h5>
-        </a>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<section id="dried-fruits" class="my-5 overflow-hidden" >
-  <div class="container pb-5">
-
-    <!-- Заголовок секции -->
-    <div class="section-header d-md-flex justify-content-between align-items-center mb-3">
-      <h2 class="display-3 fw-normal text-dark">Dried Fruits</h2>
-      <div>
-        <a href="#" class="btn btn-outline-success btn-lg text-uppercase fs-6 rounded-1" style="--bs-btn-border-color: #379042; --bs-btn-color: #379042;">
-          Shop Now
-          <svg width="24" height="24" viewBox="0 0 24 24" class="mb-1" fill="#379042">
-            <use xlink:href="#arrow-right"></use>
-          </svg>
-        </a>
-      </div>
-    </div>
-
-    <!-- Слайдер продуктов -->
-    <div class="products-carousel swiper">
-      <div class="swiper-wrapper">
-
-        <!-- Пример карточки -->
-        <div class="swiper-slide">
-          <div class="position-absolute z-1 rounded-3 m-3 px-3 bg-success-subtle text-success small fw-semibold" style="border: 1px solid #379042;">
-            New
-          </div>
-          <div class="card position-relative border-0 shadow-sm">
-            <a href="single-product.html">
-              <img src="images/dried1.jpg" class="img-fluid rounded-4" alt="Dried Mango">
+  <header>
+    <div class="container py-2">
+      <div class="row py-4 pb-0 pb-sm-4 align-items-center">
+        <!-- Logo -->
+        <div class="col-sm-4 col-lg-3 text-center text-sm-start">
+          <div class="main-logo">
+            <a href="index.html" class="text-decoration-none fw-bold fs-4" style="color: #379042;">
+              <img src="images/new-logo.png" alt="" height="80">
             </a>
-            <div class="card-body p-0">
-              <a href="single-product.html">
-                <h3 class="card-title pt-4 m-0 text-dark">Premium Dried Mango</h3>
+          </div>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="col-sm-6 offset-sm-2 offset-md-0 col-lg-5 d-none d-lg-block">
+          <div class="search-bar border rounded-2 px-3" style="border-color: #cfe6d1;">
+            <form id="search-form" class="text-center d-flex align-items-center" action="/search" method="GET">
+              <input type="text" name="query" class="form-control border-0 bg-transparent text-dark"
+                placeholder="Search dried fruits, nut mixes, organic snacks..." />
+              <button type="submit" class="btn p-0 border-0 bg-transparent text-success" style="color: #379042;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path fill="currentColor"
+                    d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z" />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div
+          class="col-sm-8 col-lg-4 d-flex justify-content-end gap-5 align-items-center mt-4 mt-sm-0 justify-content-center justify-content-sm-end">
+          <div class="support-box text-end d-none d-xl-block">
+            <span class="fs-6 secondary-font" style="color: #7fae89;">Email</span>
+            <h5 class="mb-0">
+              <a href="mailto:s.saparbaev@theslb.lt" class="text-decoration-none fw-medium" style="color: #379042;">
+                marius_alzbergas@theslb.lt
               </a>
-              <div class="card-text">
-                <span class="rating secondary-font text-success d-inline-block mb-2">
-                  <iconify-icon icon="clarity:star-solid" style="color: #379042;"></iconify-icon>
-                  <iconify-icon icon="clarity:star-solid" style="color: #379042;"></iconify-icon>
-                  <iconify-icon icon="clarity:star-solid" style="color: #379042;"></iconify-icon>
-                  <iconify-icon icon="clarity:star-solid" style="color: #379042;"></iconify-icon>
-                  <iconify-icon icon="clarity:star-solid" style="color: #379042;"></iconify-icon>
-                  5.0
-                </span>
-                <h3 class="secondary-font fw-semibold" style="color: #379042;">$12.99</h3>
-                <div class="d-flex flex-wrap mt-3">
-                  <a href="#" class="btn-cart me-3 px-4 pt-3 pb-3 bg-success text-white rounded-1">
-                    <h5 class="text-uppercase m-0 fs-6">Add to Cart</h5>
-                  </a>
-                  <a href="#" class="btn-wishlist px-4 pt-3 text-success">
-                    <iconify-icon icon="fluent:heart-28-filled" class="fs-5" style="color: #379042;"></iconify-icon>
-                  </a>
-                </div>
-              </div>
-            </div>
+            </h5>
           </div>
         </div>
-
-        <!-- Остальные карточки — по аналогии, только замени цену, заголовок и иконку скидки/ярлык -->
-        <!-- ... -->
-
       </div>
     </div>
 
-  </div>
-</section>
-
-
-<section id="banner-2" class="my-3 py-5" style="background-color: #F0F7F3;">
-  <div class="container">
-    <div class="row banner-content align-items-center">
-      <div class="content-wrapper col-12 col-md-12 p-5 text-center text-md-start">
-        <div class="secondary-font text-success text-uppercase mb-3 fs-4 fw-semibold" style="color: #379042;">
-          Up to 40% Off
-        </div>
-        <h2 class="banner-title display-1 fw-bold text-dark">
-          Natural <span style="color: #379042;">Dried Fruits</span> Sale!
-        </h2>
-        <p class="lead my-3 text-secondary">
-          Discover premium dried apricots, figs, dates, and more — all at discounted prices.
-        </p>
-        <a href="#" class="btn btn-success btn-lg text-uppercase fs-6 rounded-1 px-5 py-3" style="background-color: #379042; border-color: #379042;">
-          Shop Now
-          <svg width="24" height="24" viewBox="0 0 24 24" class="mb-1 ms-2" fill="#fff">
-            <use xlink:href="#arrow-right"></use>
-          </svg>
-        </a>
-      </div>
+    <div class="container-fluid">
+      <hr class="m-0">
     </div>
-  </div>
-</section>
+    <div class="container">
+      <nav class="main-menu d-flex navbar navbar-expand-lg">
 
-
-<section id="testimonial" >
-  <div class="container my-5 py-5">
-    <div class="row">
-      <div class="offset-md-1 col-md-10">
-        <div class="swiper testimonial-swiper">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="row">
-                <div class="col-2">
-                  <iconify-icon icon="ri:double-quotes-l" class="quote-icon fs-1" style="color: #379042;"></iconify-icon>
-                </div>
-                <div class="col-md-10 mt-md-5 p-5 pt-0 pt-md-5 bg-white rounded-4 shadow-sm">
-                  <p class="testimonial-content fs-3 text-secondary-emphasis">
-                    “The dried apricots are incredibly sweet and fresh. I can’t believe they’re not full of added sugar — just pure goodness!”
-                  </p>
-                  <p class="fw-bold text-success-emphasis mt-3" style="color: #379042;">– Anna Petrova</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="row">
-                <div class="col-2">
-                  <iconify-icon icon="ri:double-quotes-l" class="quote-icon fs-1" style="color: #379042;"></iconify-icon>
-                </div>
-                <div class="col-md-10 mt-md-5 p-5 pt-0 pt-md-5 bg-white rounded-4 shadow-sm">
-                  <p class="testimonial-content fs-3 text-secondary-emphasis">
-                    “Finally found a place with real, sun-dried figs and no preservatives. Delicious and healthy snack for my kids!”
-                  </p>
-                  <p class="fw-bold text-success-emphasis mt-3" style="color: #379042;">– Dmitry Sokolov</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="row">
-                <div class="col-2">
-                  <iconify-icon icon="ri:double-quotes-l" class="quote-icon fs-1" style="color: #379042;"></iconify-icon>
-                </div>
-                <div class="col-md-10 mt-md-5 p-5 pt-0 pt-md-5 bg-white rounded-4 shadow-sm">
-                  <p class="testimonial-content fs-3 text-secondary-emphasis">
-                    “I ordered dried mango and dates — they arrived fast and taste amazing. Will definitely be ordering again.”
-                  </p>
-                  <p class="fw-bold text-success-emphasis mt-3" style="color: #379042;">– Elena Markina</p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="swiper-pagination mt-4"></div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="bestselling" class="my-5 overflow-hidden" >
-  <div class="container py-5 mb-5">
-
-    <div class="section-header d-md-flex justify-content-between align-items-center mb-4">
-      <h2 class="display-4 fw-semibold text-dark">Best Selling Dried Fruits</h2>
-      <div>
-        <a href="#" class="btn btn-outline-success btn-lg text-uppercase fs-6 rounded-1" style="border-color: #379042; color: #379042;">
-          Shop Now
-          <svg width="24" height="24" viewBox="0 0 24 24" class="mb-1 ms-2">
-            <use xlink:href="#arrow-right"></use>
-          </svg>
-        </a>
-      </div>
-    </div>
-
-    <div class="swiper bestselling-swiper">
-      <div class="swiper-wrapper">
-
-        <!-- Product Card 1 -->
-        <div class="swiper-slide">
-          <div class="card position-relative border-0 shadow-sm rounded-4">
-            <a href="single-product.html"><img src="images/dried-apricots.jpg" class="img-fluid rounded-top-4" alt="Dried Apricots"></a>
-            <div class="card-body p-4">
-              <a href="single-product.html">
-                <h5 class="card-title fw-semibold text-dark">Natural Dried Apricots</h5>
+        <div class="d-flex d-lg-none align-items-end mt-3">
+          <ul class="d-flex justify-content-end list-unstyled m-0">
+            <li>
+              <a href="account.html" class="mx-3 text-success-emphasis" style="color: #379042;">
+                <iconify-icon icon="healthicons:person" class="fs-4"></iconify-icon>
               </a>
-              <div class="card-text">
-                <span class="rating d-block mb-2 text-warning">
-                  ★★★★★ 5.0
-                </span>
-                <h5 class="text-success" style="color: #379042;">$6.90 / 500g</h5>
-                <div class="d-flex flex-wrap mt-3">
-                  <a href="#" class="btn btn-success text-white me-3 px-4 py-2 rounded-1" style="background-color: #379042;">
-                    Add to Cart
-                  </a>
-                  <a href="#" class="btn-wishlist px-3 pt-2">
-                    <iconify-icon icon="fluent:heart-28-filled" class="fs-5 text-danger"></iconify-icon>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Product Card 2 -->
-        <div class="swiper-slide">
-          <div class="card position-relative border-0 shadow-sm rounded-4">
-            <a href="single-product.html"><img src="images/dried-figs.jpg" class="img-fluid rounded-top-4" alt="Dried Figs"></a>
-            <div class="card-body p-4">
-              <a href="single-product.html">
-                <h5 class="card-title fw-semibold text-dark">Premium Dried Figs</h5>
+            </li>
+            <li>
+              <a href="wishlist.html" class="mx-3" style="color: #379042;">
+                <iconify-icon icon="mdi:heart" class="fs-4"></iconify-icon>
               </a>
-              <div class="card-text">
-                <span class="rating d-block mb-2 text-warning">
-                  ★★★★★ 5.0
+            </li>
+            <li>
+              <a href="#" class="mx-3 position-relative" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart"
+                aria-controls="offcanvasCart" style="color: #379042;">
+                <iconify-icon icon="mdi:cart" class="fs-4"></iconify-icon>
+                <span class="position-absolute translate-middle badge rounded-circle bg-success pt-2"
+                  style="background-color: #379042;">
+                  03
                 </span>
-                <h5 class="text-success" style="color: #379042;">$5.80 / 400g</h5>
-                <div class="d-flex flex-wrap mt-3">
-                  <a href="#" class="btn btn-success text-white me-3 px-4 py-2 rounded-1" style="background-color: #379042;">
-                    Add to Cart
-                  </a>
-                  <a href="#" class="btn-wishlist px-3 pt-2">
-                    <iconify-icon icon="fluent:heart-28-filled" class="fs-5 text-danger"></iconify-icon>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Product Card 3 -->
-        <div class="swiper-slide">
-          <div class="z-1 position-absolute top-0 end-0 m-3 px-3 py-1 bg-light border border-success rounded-pill" style="color: #379042;">
-            -10%
-          </div>
-          <div class="card position-relative border-0 shadow-sm rounded-4">
-            <a href="single-product.html"><img src="images/dates.jpg" class="img-fluid rounded-top-4" alt="Pitted Dates"></a>
-            <div class="card-body p-4">
-              <a href="single-product.html">
-                <h5 class="card-title fw-semibold text-dark">Pitted Dates</h5>
               </a>
-              <div class="card-text">
-                <span class="rating d-block mb-2 text-warning">
-                  ★★★★★ 5.0
-                </span>
-                <h5 class="text-success" style="color: #379042;"><s class="text-muted me-2">$5.00</s> $4.50 / 500g</h5>
-                <div class="d-flex flex-wrap mt-3">
-                  <a href="#" class="btn btn-success text-white me-3 px-4 py-2 rounded-1" style="background-color: #379042;">
-                    Add to Cart
-                  </a>
-                  <a href="#" class="btn-wishlist px-3 pt-2">
-                    <iconify-icon icon="fluent:heart-28-filled" class="fs-5 text-danger"></iconify-icon>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div> <!-- /.swiper-wrapper -->
-    </div> <!-- /.swiper -->
-
-  </div>
-</section>
-
-
-<section id="register" style="background-color: #F2F8F5;">
-  <div class="container">
-    <div class="row my-5 py-5">
-      <div class="offset-md-3 col-md-6 my-5">
-
-        <h2 class="display-4 fw-semibold text-center">
-          Get <span style="color: #379042;">20% OFF</span> Your First Order
-        </h2>
-
-        <p class="text-center text-muted mb-4">
-          Join our dried fruits family and enjoy exclusive deals and healthy tips!
-        </p>
-
-        <form>
-          <div class="mb-3">
-            <input type="email" class="form-control form-control-lg rounded-2 shadow-sm border border-success-subtle" 
-                   name="email" id="email"
-                   placeholder="Enter your email address" required>
-          </div>
-
-          <div class="mb-3">
-            <input type="password" class="form-control form-control-lg rounded-2 shadow-sm border border-success-subtle" 
-                   name="password" id="password1"
-                   placeholder="Create a password" required>
-          </div>
-
-          <div class="mb-3">
-            <input type="password" class="form-control form-control-lg rounded-2 shadow-sm border border-success-subtle"
-                   name="confirm_password" id="password2"
-                   placeholder="Repeat password" required>
-          </div>
-
-          <div class="d-grid gap-2">
-            <button type="submit" class="btn btn-lg text-white text-uppercase fw-semibold"
-                    style="background-color: #379042;">
-              Join Now
-            </button>
-          </div>
-        </form>
-
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-  <section id="service" >
-  <div class="container py-5 my-5">
-    <div class="row g-md-5 pt-4 text-center">
-      <div class="col-md-3 my-3">
-        <div class="card border-0 shadow-sm py-4 px-3 h-100">
-          <div class="mb-3">
-            <iconify-icon icon="la:shopping-cart" style="color: #379042; font-size: 42px;"></iconify-icon>
-          </div>
-          <h3 class="card-title py-2 m-0 text-dark">Free Delivery</h3>
-          <div class="card-text">
-            <p class="fs-6 text-muted">Enjoy fast and free delivery on all orders above $30 within the country.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-3 my-3">
-        <div class="card border-0 shadow-sm py-4 px-3 h-100">
-          <div class="mb-3">
-            <iconify-icon icon="la:user-check" style="color: #379042; font-size: 42px;"></iconify-icon>
-          </div>
-          <h3 class="card-title py-2 m-0 text-dark">100% Secure Payment</h3>
-          <div class="card-text">
-            <p class="fs-6 text-muted">Shop with confidence using our encrypted and secure checkout process.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-3 my-3">
-        <div class="card border-0 shadow-sm py-4 px-3 h-100">
-          <div class="mb-3">
-            <iconify-icon icon="la:tag" style="color: #379042; font-size: 42px;"></iconify-icon>
-          </div>
-          <h3 class="card-title py-2 m-0 text-dark">Daily Offers</h3>
-          <div class="card-text">
-            <p class="fs-6 text-muted">Get exclusive discounts and special deals every day — don’t miss out!</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-3 my-3">
-        <div class="card border-0 shadow-sm py-4 px-3 h-100">
-          <div class="mb-3">
-            <iconify-icon icon="la:award" style="color: #379042; font-size: 42px;"></iconify-icon>
-          </div>
-          <h3 class="card-title py-2 m-0 text-dark">Quality Guarantee</h3>
-          <div class="card-text">
-            <p class="fs-6 text-muted">We source only premium dried fruits — naturally delicious and nutritious.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<footer id="footer">
-  <div class="container py-5 my-5">
-    <div class="row">
-
-      <!-- Quick Links -->
-      <div class="col-md-3 mb-4 mb-md-0">
-        <div class="footer-menu">
-          <h3 class="mb-3" style="color: #3A7A5B;">Quick Links</h3>
-          <ul class="menu-list list-unstyled">
-            <li><a href="#" class="nav-link" style="color: #5B9279;">Home</a></li>
-            <li><a href="#" class="nav-link" style="color: #5B9279;">About Us</a></li>
-            <li><a href="#" class="nav-link" style="color: #5B9279;">Offer</a></li>
-            <li><a href="#" class="nav-link" style="color: #5B9279;">Services</a></li>
-            <li><a href="#" class="nav-link" style="color: #5B9279;">Contact Us</a></li>
+            </li>
+            <li>
+              <a href="#" class="mx-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSearch"
+                aria-controls="offcanvasSearch" style="color: #379042;">
+                <iconify-icon icon="tabler:search" class="fs-4"></iconify-icon>
+              </a>
+            </li>
           </ul>
         </div>
-      </div>
 
-      <!-- Help Center -->
-      <div class="col-md-3 mb-4 mb-md-0">
-        <div class="footer-menu">
-          <h3 class="mb-3" style="color: #3A7A5B;">Help Center</h3>
-          <ul class="menu-list list-unstyled">
-            <li><a href="#" class="nav-link" style="color: #5B9279;">FAQs</a></li>
-            <li><a href="#" class="nav-link" style="color: #5B9279;">Payment</a></li>
-            <li><a href="#" class="nav-link" style="color: #5B9279;">Returns & Refunds</a></li>
-            <li><a href="#" class="nav-link" style="color: #5B9279;">Checkout</a></li>
-            <li><a href="#" class="nav-link" style="color: #5B9279;">Delivery Info</a></li>
-          </ul>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header justify-content-center">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+
+          <div class="offcanvas-body justify-content-between">
+            <ul class="navbar-nav menu-list list-unstyled d-flex gap-md-3 mb-0">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link fw-semibold text-success" style="color: #379042;">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="shop.html" class="nav-link fw-semibold" style="color: #379042;">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a href="about.html" class="nav-link fw-semibold" style="color: #379042;">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link fw-semibold" style="color: #379042;">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
+      </nav>
+    </div>
+  </header>
 
-      <!-- Newsletter -->
-      <div class="col-md-6">
+  <section id="banner" style="background-color: #e5f3e6;">
+    <div class="container">
+      <div class="swiper main-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide py-5">
+            <div class="row banner-content align-items-center">
+              <div class="img-wrapper col-md-5">
+                <!-- Можно добавить изображение -->
+              </div>
+              <div class="content-wrapper col-md-7 p-5 mb-5">
+                <div class="secondary-font text-uppercase mb-4" style="color: #379042;">Natural & Healthy</div>
+                <h2 class="banner-title display-1 fw-normal">
+                  Delicious <span style="color: #379042;">Mixed Dried Fruits</span>
+                </h2>
+                <p class="mb-4 fs-5 text-dark-emphasis">A perfect blend of dried apricots, figs, and raisins for your
+                  healthy snacking.</p>
+                <a href="shop.html" class="btn btn-primary btn-lg text-uppercase fs-6 rounded-1"
+                  style="--bs-btn-bg: #379042;">
+                  Shop Now
+                  <svg width="24" height="24" viewBox="0 0 24 24" class="mb-1">
+                    <use xlink:href="#arrow-right"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide py-5">
+            <div class="row banner-content align-items-center">
+              <div class="img-wrapper col-md-5"></div>
+              <div class="content-wrapper col-md-7 p-5 mb-5">
+                <div class="secondary-font text-uppercase mb-4" style="color: #379042;">Sweet & Tasty</div>
+                <h2 class="banner-title display-1 fw-normal">
+                  Premium <span style="color: #379042;">Dried Apricots</span>
+                </h2>
+                <p class="mb-4 fs-5 text-dark-emphasis">Naturally dried, full of flavor and packed with nutrients.</p>
+                <a href="shop.html" class="btn btn-primary btn-lg text-uppercase fs-6 rounded-1"
+                  style="--bs-btn-bg: #379042;">
+                  Buy Now
+                  <svg width="24" height="24" viewBox="0 0 24 24" class="mb-1">
+                    <use xlink:href="#arrow-right"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide py-5">
+            <div class="row banner-content align-items-center">
+              <div class="img-wrapper col-md-5"></div>
+              <div class="content-wrapper col-md-7 p-5 mb-5">
+                <div class="secondary-font text-uppercase mb-4" style="color: #379042;">Nutritious Mix</div>
+                <h2 class="banner-title display-1 fw-normal">
+                  Organic <span style="color: #379042;">Dried Figs & Nuts</span>
+                </h2>
+                <p class="mb-4 fs-5 text-dark-emphasis">Handpicked figs combined with premium nuts for the ultimate
+                  snack.</p>
+                <a href="shop.html" class="btn btn-primary btn-lg text-uppercase fs-6 rounded-1"
+                  style="--bs-btn-bg: #379042;">
+                  Order Today
+                  <svg width="24" height="24" viewBox="0 0 24 24" class="mb-1">
+                    <use xlink:href="#arrow-right"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-pagination mb-5"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="categories">
+    <div class="container my-3 py-5">
+      <div class="row my-5">
+
+        <div class="col text-center">
+          <a href="#" class="categories-item text-decoration-none text-dark">
+            <iconify-icon class="category-icon mb-3" icon="mdi:fruit-cherries" style="color: #379042; font-size: 3rem;">
+            </iconify-icon>
+            <h5 class="fw-semibold" style="color: #379042;">Dried Berries</h5>
+          </a>
+        </div>
+
+        <div class="col text-center">
+          <a href="#" class="categories-item text-decoration-none text-dark">
+            <iconify-icon class="category-icon mb-3" icon="mdi:fruit-citrus" style="color: #379042; font-size: 3rem;">
+            </iconify-icon>
+            <h5 class="fw-semibold" style="color: #379042;">Dried Citrus</h5>
+          </a>
+        </div>
+
+        <div class="col text-center">
+          <a href="#" class="categories-item text-decoration-none text-dark">
+            <iconify-icon class="category-icon mb-3" icon="mdi:fruit-grapes" style="color: #379042; font-size: 3rem;">
+            </iconify-icon>
+            <h5 class="fw-semibold" style="color: #379042;">Raisins & Grapes</h5>
+          </a>
+        </div>
+
+        <div class="col text-center">
+          <a href="#" class="categories-item text-decoration-none text-dark">
+            <iconify-icon class="category-icon mb-3" icon="mdi:nut" style="color: #379042; font-size: 3rem;">
+            </iconify-icon>
+            <h5 class="fw-semibold" style="color: #379042;">Nuts & Seeds</h5>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="dried-fruits" class="my-5 overflow-hidden">
+    <div class="container pb-5">
+
+      <!-- Заголовок секции -->
+      <div class="section-header d-md-flex justify-content-between align-items-center mb-3">
+        <h2 class="display-3 fw-normal text-dark">Dried Fruits</h2>
         <div>
-          <h3 class="mb-3" style="color: #3A7A5B;">Our Newsletter</h3>
-          <p class="fs-6" style="color: #5B9279;">Subscribe to receive updates on exclusive offers and seasonal specials.</p>
-          <form class="d-flex align-items-center bg-white border border-success-subtle rounded-pill px-3 mt-3">
-            <input
-              type="email"
-              class="form-control border-0 bg-transparent shadow-none"
-              placeholder="Enter your email here"
-              required />
-            <button type="submit" class="btn p-0 ms-2">
-              <iconify-icon icon="tabler:send" style="color: #3A7A5B; font-size: 24px;"></iconify-icon>
-            </button>
-          </form>
+          <a href="#" class="btn btn-outline-success btn-lg text-uppercase fs-6 rounded-1"
+            style="--bs-btn-border-color: #379042; --bs-btn-color: #379042;">
+            Shop Now
+            <svg width="24" height="24" viewBox="0 0 24 24" class="mb-1" fill="#379042">
+              <use xlink:href="#arrow-right"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Слайдер продуктов -->
+      <div class="products-carousel swiper">
+        <div class="swiper-wrapper">
+
+          <!-- Пример карточки -->
+          <div class="swiper-slide">
+            <div class="position-absolute z-1 rounded-3 m-3 px-3 bg-success-subtle text-success small fw-semibold"
+              style="border: 1px solid #379042;">
+              New
+            </div>
+            <div class="card position-relative border-0 shadow-sm">
+              <a href="single-product.html">
+                <img src="images/dried1.jpg" class="img-fluid rounded-4" alt="Dried Mango">
+              </a>
+              <div class="card-body p-0">
+                <a href="single-product.html">
+                  <h3 class="card-title pt-4 m-0 text-dark">Premium Dried Mango</h3>
+                </a>
+                <div class="card-text">
+                  <span class="rating secondary-font text-success d-inline-block mb-2">
+                    <iconify-icon icon="clarity:star-solid" style="color: #379042;"></iconify-icon>
+                    <iconify-icon icon="clarity:star-solid" style="color: #379042;"></iconify-icon>
+                    <iconify-icon icon="clarity:star-solid" style="color: #379042;"></iconify-icon>
+                    <iconify-icon icon="clarity:star-solid" style="color: #379042;"></iconify-icon>
+                    <iconify-icon icon="clarity:star-solid" style="color: #379042;"></iconify-icon>
+                    5.0
+                  </span>
+                  <h3 class="secondary-font fw-semibold" style="color: #379042;">$12.99</h3>
+                  <div class="d-flex flex-wrap mt-3">
+                    <a href="#" class="btn-cart me-3 px-4 pt-3 pb-3 bg-success text-white rounded-1">
+                      <h5 class="text-uppercase m-0 fs-6">Add to Cart</h5>
+                    </a>
+                    <a href="#" class="btn-wishlist px-4 pt-3 text-success">
+                      <iconify-icon icon="fluent:heart-28-filled" class="fs-5" style="color: #379042;"></iconify-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Остальные карточки — по аналогии, только замени цену, заголовок и иконку скидки/ярлык -->
+          <!-- ... -->
+
         </div>
       </div>
 
     </div>
-  </div>
-</footer>
+  </section>
+
+
+  <section id="banner-2" class="my-3 py-5" style="background-color: #F0F7F3;">
+    <div class="container">
+      <div class="row banner-content align-items-center">
+        <div class="content-wrapper col-12 col-md-12 p-5 text-center text-md-start">
+          <div class="secondary-font text-success text-uppercase mb-3 fs-4 fw-semibold" style="color: #379042;">
+            Up to 40% Off
+          </div>
+          <h2 class="banner-title display-1 fw-bold text-dark">
+            Natural <span style="color: #379042;">Dried Fruits</span> Sale!
+          </h2>
+          <p class="lead my-3 text-secondary">
+            Discover premium dried apricots, figs, dates, and more — all at discounted prices.
+          </p>
+          <a href="#" class="btn btn-success btn-lg text-uppercase fs-6 rounded-1 px-5 py-3"
+            style="background-color: #379042; border-color: #379042;">
+            Shop Now
+            <svg width="24" height="24" viewBox="0 0 24 24" class="mb-1 ms-2" fill="#fff">
+              <use xlink:href="#arrow-right"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="testimonial">
+    <div class="container my-5 py-5">
+      <div class="row">
+        <div class="offset-md-1 col-md-10">
+          <div class="swiper testimonial-swiper">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <div class="row">
+                  <div class="col-2">
+                    <iconify-icon icon="ri:double-quotes-l" class="quote-icon fs-1" style="color: #379042;">
+                    </iconify-icon>
+                  </div>
+                  <div class="col-md-10 mt-md-5 p-5 pt-0 pt-md-5 bg-white rounded-4 shadow-sm">
+                    <p class="testimonial-content fs-3 text-secondary-emphasis">
+                      “The dried apricots are incredibly sweet and fresh. I can’t believe they’re not full of added
+                      sugar — just pure goodness!”
+                    </p>
+                    <p class="fw-bold text-success-emphasis mt-3" style="color: #379042;">– Anna Petrova</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="row">
+                  <div class="col-2">
+                    <iconify-icon icon="ri:double-quotes-l" class="quote-icon fs-1" style="color: #379042;">
+                    </iconify-icon>
+                  </div>
+                  <div class="col-md-10 mt-md-5 p-5 pt-0 pt-md-5 bg-white rounded-4 shadow-sm">
+                    <p class="testimonial-content fs-3 text-secondary-emphasis">
+                      “Finally found a place with real, sun-dried figs and no preservatives. Delicious and healthy snack
+                      for my kids!”
+                    </p>
+                    <p class="fw-bold text-success-emphasis mt-3" style="color: #379042;">– Dmitry Sokolov</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="row">
+                  <div class="col-2">
+                    <iconify-icon icon="ri:double-quotes-l" class="quote-icon fs-1" style="color: #379042;">
+                    </iconify-icon>
+                  </div>
+                  <div class="col-md-10 mt-md-5 p-5 pt-0 pt-md-5 bg-white rounded-4 shadow-sm">
+                    <p class="testimonial-content fs-3 text-secondary-emphasis">
+                      “I ordered dried mango and dates — they arrived fast and taste amazing. Will definitely be
+                      ordering again.”
+                    </p>
+                    <p class="fw-bold text-success-emphasis mt-3" style="color: #379042;">– Elena Markina</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="swiper-pagination mt-4"></div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="bestselling" class="my-5 overflow-hidden">
+    <div class="container py-5 mb-5">
+
+      <div class="section-header d-md-flex justify-content-between align-items-center mb-4">
+        <h2 class="display-4 fw-semibold text-dark">Best Selling Dried Fruits</h2>
+        <div>
+          <a href="#" class="btn btn-outline-success btn-lg text-uppercase fs-6 rounded-1"
+            style="border-color: #379042; color: #379042;">
+            Shop Now
+            <svg width="24" height="24" viewBox="0 0 24 24" class="mb-1 ms-2">
+              <use xlink:href="#arrow-right"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="swiper bestselling-swiper">
+        <div class="swiper-wrapper">
+
+          <!-- Product Card 1 -->
+          <div class="swiper-slide">
+            <div class="card position-relative border-0 shadow-sm rounded-4">
+              <a href="single-product.html"><img src="images/dried-apricots.jpg" class="img-fluid rounded-top-4"
+                  alt="Dried Apricots"></a>
+              <div class="card-body p-4">
+                <a href="single-product.html">
+                  <h5 class="card-title fw-semibold text-dark">Natural Dried Apricots</h5>
+                </a>
+                <div class="card-text">
+                  <span class="rating d-block mb-2 text-warning">
+                    ★★★★★ 5.0
+                  </span>
+                  <h5 class="text-success" style="color: #379042;">$6.90 / 500g</h5>
+                  <div class="d-flex flex-wrap mt-3">
+                    <a href="#" class="btn btn-success text-white me-3 px-4 py-2 rounded-1"
+                      style="background-color: #379042;">
+                      Add to Cart
+                    </a>
+                    <a href="#" class="btn-wishlist px-3 pt-2">
+                      <iconify-icon icon="fluent:heart-28-filled" class="fs-5 text-danger"></iconify-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Card 2 -->
+          <div class="swiper-slide">
+            <div class="card position-relative border-0 shadow-sm rounded-4">
+              <a href="single-product.html"><img src="images/dried-figs.jpg" class="img-fluid rounded-top-4"
+                  alt="Dried Figs"></a>
+              <div class="card-body p-4">
+                <a href="single-product.html">
+                  <h5 class="card-title fw-semibold text-dark">Premium Dried Figs</h5>
+                </a>
+                <div class="card-text">
+                  <span class="rating d-block mb-2 text-warning">
+                    ★★★★★ 5.0
+                  </span>
+                  <h5 class="text-success" style="color: #379042;">$5.80 / 400g</h5>
+                  <div class="d-flex flex-wrap mt-3">
+                    <a href="#" class="btn btn-success text-white me-3 px-4 py-2 rounded-1"
+                      style="background-color: #379042;">
+                      Add to Cart
+                    </a>
+                    <a href="#" class="btn-wishlist px-3 pt-2">
+                      <iconify-icon icon="fluent:heart-28-filled" class="fs-5 text-danger"></iconify-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Card 3 -->
+          <div class="swiper-slide">
+            <div class="z-1 position-absolute top-0 end-0 m-3 px-3 py-1 bg-light border border-success rounded-pill"
+              style="color: #379042;">
+              -10%
+            </div>
+            <div class="card position-relative border-0 shadow-sm rounded-4">
+              <a href="single-product.html"><img src="images/dates.jpg" class="img-fluid rounded-top-4"
+                  alt="Pitted Dates"></a>
+              <div class="card-body p-4">
+                <a href="single-product.html">
+                  <h5 class="card-title fw-semibold text-dark">Pitted Dates</h5>
+                </a>
+                <div class="card-text">
+                  <span class="rating d-block mb-2 text-warning">
+                    ★★★★★ 5.0
+                  </span>
+                  <h5 class="text-success" style="color: #379042;"><s class="text-muted me-2">$5.00</s> $4.50 / 500g
+                  </h5>
+                  <div class="d-flex flex-wrap mt-3">
+                    <a href="#" class="btn btn-success text-white me-3 px-4 py-2 rounded-1"
+                      style="background-color: #379042;">
+                      Add to Cart
+                    </a>
+                    <a href="#" class="btn-wishlist px-3 pt-2">
+                      <iconify-icon icon="fluent:heart-28-filled" class="fs-5 text-danger"></iconify-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div> <!-- /.swiper-wrapper -->
+      </div> <!-- /.swiper -->
+
+    </div>
+  </section>
+
+
+  <section id="register" style="background-color: #F2F8F5;">
+    <div class="container">
+      <div class="row my-5 py-5">
+        <div class="offset-md-3 col-md-6 my-5">
+
+          <h2 class="display-4 fw-semibold text-center">
+            Get <span style="color: #379042;">20% OFF</span> Your First Order
+          </h2>
+
+          <p class="text-center text-muted mb-4">
+            Join our dried fruits family and enjoy exclusive deals and healthy tips!
+          </p>
+
+          <form>
+            <div class="mb-3">
+              <input type="email" class="form-control form-control-lg rounded-2 shadow-sm border border-success-subtle"
+                name="email" id="email" placeholder="Enter your email address" required>
+            </div>
+
+            <div class="mb-3">
+              <input type="password"
+                class="form-control form-control-lg rounded-2 shadow-sm border border-success-subtle" name="password"
+                id="password1" placeholder="Create a password" required>
+            </div>
+
+            <div class="mb-3">
+              <input type="password"
+                class="form-control form-control-lg rounded-2 shadow-sm border border-success-subtle"
+                name="confirm_password" id="password2" placeholder="Repeat password" required>
+            </div>
+
+            <div class="d-grid gap-2">
+              <button type="submit" class="btn btn-lg text-white text-uppercase fw-semibold"
+                style="background-color: #379042;">
+                Join Now
+              </button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="service">
+    <div class="container py-5 my-5">
+      <div class="row g-md-5 pt-4 text-center">
+        <div class="col-md-3 my-3">
+          <div class="card border-0 shadow-sm py-4 px-3 h-100">
+            <div class="mb-3">
+              <iconify-icon icon="la:shopping-cart" style="color: #379042; font-size: 42px;"></iconify-icon>
+            </div>
+            <h3 class="card-title py-2 m-0 text-dark">Free Delivery</h3>
+            <div class="card-text">
+              <p class="fs-6 text-muted">Enjoy fast and free delivery on all orders above $30 within the country.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 my-3">
+          <div class="card border-0 shadow-sm py-4 px-3 h-100">
+            <div class="mb-3">
+              <iconify-icon icon="la:user-check" style="color: #379042; font-size: 42px;"></iconify-icon>
+            </div>
+            <h3 class="card-title py-2 m-0 text-dark">100% Secure Payment</h3>
+            <div class="card-text">
+              <p class="fs-6 text-muted">Shop with confidence using our encrypted and secure checkout process.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 my-3">
+          <div class="card border-0 shadow-sm py-4 px-3 h-100">
+            <div class="mb-3">
+              <iconify-icon icon="la:tag" style="color: #379042; font-size: 42px;"></iconify-icon>
+            </div>
+            <h3 class="card-title py-2 m-0 text-dark">Daily Offers</h3>
+            <div class="card-text">
+              <p class="fs-6 text-muted">Get exclusive discounts and special deals every day — don’t miss out!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 my-3">
+          <div class="card border-0 shadow-sm py-4 px-3 h-100">
+            <div class="mb-3">
+              <iconify-icon icon="la:award" style="color: #379042; font-size: 42px;"></iconify-icon>
+            </div>
+            <h3 class="card-title py-2 m-0 text-dark">Quality Guarantee</h3>
+            <div class="card-text">
+              <p class="fs-6 text-muted">We source only premium dried fruits — naturally delicious and nutritious.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer id="footer">
+    <div class="container py-5 my-5">
+      <div class="row">
+
+        <!-- Quick Links -->
+        <div class="col-md-3 mb-4 mb-md-0">
+          <div class="footer-menu">
+            <h3 class="mb-3" style="color: #3A7A5B;">Quick Links</h3>
+            <ul class="menu-list list-unstyled">
+              <li><a href="#" class="nav-link" style="color: #5B9279;">Home</a></li>
+              <li><a href="#" class="nav-link" style="color: #5B9279;">About Us</a></li>
+              <li><a href="#" class="nav-link" style="color: #5B9279;">Offer</a></li>
+              <li><a href="#" class="nav-link" style="color: #5B9279;">Services</a></li>
+              <li><a href="#" class="nav-link" style="color: #5B9279;">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Help Center -->
+        <div class="col-md-3 mb-4 mb-md-0">
+          <div class="footer-menu">
+            <h3 class="mb-3" style="color: #3A7A5B;">Help Center</h3>
+            <ul class="menu-list list-unstyled">
+              <li><a href="#" class="nav-link" style="color: #5B9279;">FAQs</a></li>
+              <li><a href="#" class="nav-link" style="color: #5B9279;">Payment</a></li>
+              <li><a href="#" class="nav-link" style="color: #5B9279;">Returns & Refunds</a></li>
+              <li><a href="#" class="nav-link" style="color: #5B9279;">Checkout</a></li>
+              <li><a href="#" class="nav-link" style="color: #5B9279;">Delivery Info</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="col-md-6">
+          <div>
+            <h3 class="mb-3" style="color: #3A7A5B;">Our Newsletter</h3>
+            <p class="fs-6" style="color: #5B9279;">Subscribe to receive updates on exclusive offers and seasonal
+              specials.</p>
+            <form class="d-flex align-items-center bg-white border border-success-subtle rounded-pill px-3 mt-3">
+              <input type="email" class="form-control border-0 bg-transparent shadow-none"
+                placeholder="Enter your email here" required />
+              <button type="submit" class="btn p-0 ms-2">
+                <iconify-icon icon="tabler:send" style="color: #3A7A5B; font-size: 24px;"></iconify-icon>
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
 
 
 
