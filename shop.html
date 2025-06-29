@@ -166,7 +166,6 @@
 <header>
   <div class="container py-2">
     <div class="row py-4 pb-0 pb-sm-4 align-items-center">
-      <!-- Logo -->
       <div class="col-sm-4 col-lg-3 text-center text-sm-start">
         <div class="main-logo">
           <a href="index.html">
@@ -175,7 +174,6 @@
         </div>
       </div>
 
-      <!-- Search Bar -->
       <div class="col-sm-6 offset-sm-2 offset-md-0 col-lg-5 d-none d-lg-block">
         <div class="search-bar border rounded-2 px-3 border-dark-subtle">
           <form id="search-form" class="text-center d-flex align-items-center" action="/search" method="GET">
@@ -189,17 +187,16 @@
         </div>
       </div>
 
-      <!-- Contact Info and Icons -->
-      <div class="col-sm-8 col-lg-4 d-flex justify-content-end gap-5 align-items-center mt-4 mt-sm-0 justify-content-center justify-content-sm-end">
-        <div class="support-box text-end d-none d-xl-block">
-          <span class="fs-6 secondary-font text-muted">Call us</span>
-          <h5 class="mb-0">+1 (800) 123-4567</h5>
-        </div>
-        <div class="support-box text-end d-none d-xl-block">
-          <span class="fs-6 secondary-font text-muted">Email</span>
-          <h5 class="mb-0">support@gmail.com</h5>
-        </div>
-      </div>
+<div class="col-sm-8 col-lg-4 d-flex justify-content-end gap-5 align-items-center mt-4 mt-sm-0 justify-content-center justify-content-sm-end">
+  <div class="support-box text-end d-none d-xl-block">
+    <span class="fs-6 secondary-font text-muted">Email</span>
+    <h5 class="mb-0">
+      <a href="mailto:s.saparbaev@theslb.lt" class="text-decoration-none text-dark">
+        s.saparbaev@theslb.lt
+      </a>
+    </h5>
+  </div>
+</div>
     </div>
   </div>
 
@@ -208,11 +205,9 @@
     <hr class="m-0">
   </div>
 
-  <!-- Navigation -->
   <div class="container">
     <nav class="main-menu d-flex navbar navbar-expand-lg">
 
-      <!-- Icons (mobile only) -->
       <div class="d-flex d-lg-none align-items-end mt-3">
         <ul class="d-flex justify-content-end list-unstyled m-0">
           <li><a href="account.html" class="mx-3"><iconify-icon icon="healthicons:person" class="fs-4"></iconify-icon></a></li>
@@ -237,43 +232,20 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <!-- Offcanvas Navbar -->
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header justify-content-center">
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
 
         <div class="offcanvas-body justify-content-between">
-          <!-- Categories -->
-          <select class="filter-categories border-0 mb-0 me-5">
-            <option>Shop by Category</option>
-            <option>Dried Fruits</option>
-            <option>Nuts & Seeds</option>
-            <option>Fruit Mixes</option>
-            <option>Organic Snacks</option>
-          </select>
-
-          <!-- Menu -->
+         
           <ul class="navbar-nav menu-list list-unstyled d-flex gap-md-3 mb-0">
-            <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
-            <li class="nav-item"><a href="shop.html" class="nav-link">Shop</a></li>
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="shop.html" class="nav-link active">Shop</a></li>
             <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
             <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
           </ul>
-
-          <!-- Desktop Icons -->
-          <div class="d-none d-lg-flex align-items-end">
-            <ul class="d-flex justify-content-end list-unstyled m-0">
-              <li><a href="account.html" class="mx-3"><iconify-icon icon="healthicons:person" class="fs-4"></iconify-icon></a></li>
-              <li><a href="wishlist.html" class="mx-3"><iconify-icon icon="mdi:heart" class="fs-4"></iconify-icon></a></li>
-              <li>
-                <a href="#" class="mx-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
-                  <iconify-icon icon="mdi:cart" class="fs-4 position-relative"></iconify-icon>
-                  <span class="position-absolute translate-middle badge rounded-circle bg-primary pt-2">03</span>
-                </a>
-              </li>
-            </ul>
-          </div>
+     
         </div>
       </div>
     </nav>
@@ -297,37 +269,34 @@
       <div class="row flex-md-row-reverse g-md-5 mb-5">
 
         <main class="col-md-9">
-          <div class="filter-shop d-md-flex justify-content-between align-items-center">
-            <div class="showing-product">
-              <p class="m-0">Showing 1–9 of 55 results</p>
-            </div>
-            <div class="sort-by">
-              <select class="filter-categories border-0 m-0">
-                <option value="">Default sorting</option>
-                <option value="">Name (A - Z)</option>
-                <option value="">Name (Z - A)</option>
-                <option value="">Price (Low-High)</option>
-                <option value="">Price (High-Low)</option>
-                <option value="">Rating (Highest)</option>
-                <option value="">Rating (Lowest)</option>
-                <option value="">Model (A - Z)</option>
-                <option value="">Model (Z - A)</option>
-              </select>
-            </div>
-          </div>
+<div class="filter-shop d-md-flex justify-content-between align-items-center">
+  <div class="showing-product">
+    <p class="m-0">Showing 1–9 of 55 dried fruits</p>
+  </div>
+  <div class="sort-by">
+    <select class="filter-categories border-0 m-0">
+      <option value="">Default sorting</option>
+      <option value="name_asc">Name (A - Z)</option>
+      <option value="name_desc">Name (Z - A)</option>
+      <option value="price_asc">Price (Low to High)</option>
+      <option value="price_desc">Price (High to Low)</option>
+      <option value="rating_high">Rating (Highest first)</option>
+      <option value="rating_low">Rating (Lowest first)</option>
+      <option value="popularity">Most Popular</option>
+      <option value="newest">Newest Arrivals</option>
+    </select>
+  </div>
+</div>
+
 
           <div class="product-grid row ">
             <div class="col-md-4 my-4">
-              <!-- <div class="z-1 position-absolute rounded-3 m-3 px-3 border border-dark-subtle">
-                New
-              </div> -->
               <div class="card position-relative">
                 <a href="single-product.html"><img src="images/item7.jpg" class="img-fluid rounded-4" alt="image"></a>
                 <div class="card-body p-0">
                   <a href="single-product.html">
                     <h3 class="card-title pt-4 m-0">Grey hoodie</h3>
                   </a>
-
                   <div class="card-text">
                     <span class="rating secondary-font">
                       <iconify-icon icon="clarity:star-solid" class="text-primary"></iconify-icon>
@@ -336,7 +305,6 @@
                       <iconify-icon icon="clarity:star-solid" class="text-primary"></iconify-icon>
                       <iconify-icon icon="clarity:star-solid" class="text-primary"></iconify-icon>
                       5.0</span>
-
                     <h3 class="secondary-font text-primary">$18.00</h3>
 
                     <div class="d-flex flex-wrap mt-3">
@@ -385,18 +353,12 @@
                         <iconify-icon icon="fluent:heart-28-filled" class="fs-5"></iconify-icon>
                       </a>
                     </div>
-
-
                   </div>
-
                 </div>
               </div>
             </div>
 
             <div class="col-md-4 my-4">
-              <!-- <div class="z-1 position-absolute rounded-3 m-3 px-3 border border-dark-subtle">
-                New
-              </div> -->
               <div class="card position-relative">
                 <a href="single-product.html"><img src="images/item5.jpg" class="img-fluid rounded-4" alt="image"></a>
                 <div class="card-body p-0">
@@ -470,9 +432,6 @@
             </div>
 
             <div class="col-md-4 my-4">
-              <!-- <div class="z-1 position-absolute rounded-3 m-3 px-3 border border-dark-subtle">
-                New
-              </div> -->
               <div class="card position-relative">
                 <a href="single-product.html"><img src="images/item13.jpg" class="img-fluid rounded-4" alt="image"></a>
                 <div class="card-body p-0">
@@ -692,77 +651,28 @@
                 </div>
               </div>
             </div>
-            <div class="widget-product-categories pt-5">
-              <h4 class="widget-title">Categories</h4>
-              <ul class="product-categories sidebar-list list-unstyled">
-                <li class="cat-item">
-                  <a href="/collections/categories">All</a>
-                </li>
-                <li class="cat-item">
-                  <a href="#" class="nav-link">Dogs</a>
-                </li>
-                <li class="cat-item">
-                  <a href="#" class="nav-link">Food</a>
-                </li>
-                <li class="cat-item">
-                  <a href="#" class="nav-link">Cats</a>
-                </li>
-                <li class="cat-item">
-                  <a href="#" class="nav-link">Birds</a>
-                </li>
-              </ul>
-            </div>
-            <div class="widget-product-tags pt-3">
-              <h4 class="widget-title">Tags</h4>
-              <ul class="product-tags sidebar-list list-unstyled">
-                <li class="tags-item">
-                  <a href="#" class="nav-link">Pets</a>
-                </li>
-                <li class="tags-item">
-                  <a href="#" class="nav-link">Clothes</a>
-                </li>
-                <li class="tags-item">
-                  <a href="#" class="nav-link">Foods</a>
-                </li>
-                <li class="tags-item">
-                  <a href="#" class="nav-link">Toys</a>
-                </li>
-              </ul>
-            </div>
-            <div class="widget-product-brands pt-3">
-              <h4 class="widget-title">Brands</h4>
-              <ul class="product-tags sidebar-list list-unstyled">
-                <li class="tags-item">
-                  <a href="#" class="nav-link">Denim</a>
-                </li>
-                <li class="tags-item">
-                  <a href="#" class="nav-link">Puma</a>
-                </li>
-                <li class="tags-item">
-                  <a href="#" class="nav-link">Klaws</a>
-                </li>
-              </ul>
-            </div>
-            <div class="widget-price-filter pt-3">
-              <h4 class="widget-titlewidget-title">Filter By Price</h4>
-              <ul class="product-tags sidebar-list list-unstyled">
-                <li class="tags-item">
-                  <a href="#" class="nav-link">Less than $10</a>
-                </li>
-                <li class="tags-item">
-                  <a href="#" class="nav-link">$10- $20</a>
-                </li>
-                <li class="tags-item">
-                  <a href="#" class="nav-link">$20- $30</a>
-                </li>
-                <li class="tags-item">
-                  <a href="#" class="nav-link">$30- $40</a>
-                </li>
-                <li class="tags-item">
-                  <a href="#" class="nav-link">$40- $50</a>
-                </li>
-              </ul>
-            </div>
+<div class="widget-product-categories pt-5">
+  <h4 class="widget-title">Categories</h4>
+  <ul class="product-categories sidebar-list list-unstyled">
+    <li class="cat-item">
+      <a href="">All</a>
+    </li>
+    <li class="cat-item">
+      <a href="#" class="nav-link">Vegetables</a>
+    </li>
+    <li class="cat-item">
+      <a href="#" class="nav-link">Dried Fruits</a>
+    </li>
+    <li class="cat-item">
+      <a href="#" class="nav-link">Grains</a>
+    </li>
+    <li class="cat-item">
+      <a href="#" class="nav-link">Oils</a>
+    </li>
+  </ul>
+</div>
+
+
           </div>
         </aside>
       </div>
@@ -774,43 +684,6 @@
   <footer id="footer" class="my-5">
     <div class="container py-5 my-5">
       <div class="row">
-
-        <div class="col-md-3">
-          <div class="footer-menu">
-            <img src="images/logo.png" alt="logo">
-            <p class="blog-paragraph fs-6 mt-3">Subscribe to our newsletter to get updates about our grand offers.</p>
-            <div class="social-links">
-              <ul class="d-flex list-unstyled gap-2">
-                <li class="social">
-                  <a href="#">
-                    <iconify-icon class="social-icon" icon="ri:facebook-fill"></iconify-icon>
-                  </a>
-                </li>
-                <li class="social">
-                  <a href="#">
-                    <iconify-icon class="social-icon" icon="ri:twitter-fill"></iconify-icon>
-                  </a>
-                </li>
-                <li class="social">
-                  <a href="#">
-                    <iconify-icon class="social-icon" icon="ri:pinterest-fill"></iconify-icon>
-                  </a>
-                </li>
-                <li class="social">
-                  <a href="#">
-                    <iconify-icon class="social-icon" icon="ri:instagram-fill"></iconify-icon>
-                  </a>
-                </li>
-                <li class="social">
-                  <a href="#">
-                    <iconify-icon class="social-icon" icon="ri:youtube-fill"></iconify-icon>
-                  </a>
-                </li>
-
-              </ul>
-            </div>
-          </div>
-        </div>
         <div class="col-md-3">
           <div class="footer-menu">
             <h3>Quick Links</h3>
@@ -855,7 +728,7 @@
               </ul>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-6">
           <div>
             <h3>Our Newsletter</h3>
             <p class="blog-paragraph fs-6">Subscribe to our newsletter to get updates about our grand offers.</p>
